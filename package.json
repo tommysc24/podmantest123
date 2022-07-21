@@ -1,7 +1,7 @@
 {
   "name": "podman-desktop",
   "productName": "Podman Desktop",
-  "version": "0.0.6-next",
+  "version": "0.0.202207210958-c7d9b3c",
   "license": "apache-2.0",
   "private": true,
   "engines": {
