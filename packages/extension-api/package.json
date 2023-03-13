@@ -1,6 +1,6 @@
 {
   "name": "@podman-desktop/api",
-  "version": "0.0.1",
+  "version": "0.0.202303131015-9ea0be8",
   "description": "Prototype API",
   "publishConfig": {
     "access": "public"
