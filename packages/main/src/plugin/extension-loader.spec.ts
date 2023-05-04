@@ -40,6 +40,7 @@ import type { ApiSenderType } from './api';
 import type { AuthenticationImpl } from './authentication';
 import type { MessageBox } from './message-box';
 import type { Telemetry } from './telemetry/telemetry';
+import type { DiagnosticProviderRegistry } from './diagnostic-provider-registry';
 
 class TestExtensionLoader extends ExtensionLoader {
   public async setupScanningDirectory(): Promise<void> {
@@ -93,6 +94,8 @@ const authenticationProviderRegistry: AuthenticationImpl = {} as unknown as Auth
 
 const telemetry: Telemetry = {} as unknown as Telemetry;
 
+const diagnosticProviderRegistry: DiagnosticProviderRegistry = {} as unknown as DiagnosticProviderRegistry;
+
 /* eslint-disable @typescript-eslint/no-empty-function */
 beforeAll(() => {
   extensionLoader = new TestExtensionLoader(
@@ -114,6 +117,7 @@ beforeAll(() => {
     inputQuickPickRegistry,
     authenticationProviderRegistry,
     telemetry,
+    diagnosticProviderRegistry,
   );
 });
 
